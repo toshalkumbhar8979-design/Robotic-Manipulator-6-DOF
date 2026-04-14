@@ -1,12 +1,15 @@
-# Robotic Arm 6-DOF Advanced System 🤖
+# Robotic Arm 6-DOF 
 
 An advanced end-to-end robotics framework featuring **Computer Vision**, **Inverse Kinematics (IK)**, and **Distributed Processing** across Raspberry Pi and Arduino for a 6-Degree-of-Freedom manipulator.
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 The system utilizes a distributed control architecture. The **Raspberry Pi** acts as the "Brain" for high-level computation (Vision & Math), while the **Arduino** acts as the "Nervous System" for real-time hardware execution.
 
+## Architecture Diagram
+
+<img width="2280" height="3828" alt="image" src="https://github.com/user-attachments/assets/f832fe4e-77e6-43a2-a8cf-2d702db8bc7c" />
 
 
 ### Core Functional Blocks:
@@ -19,7 +22,7 @@ The system utilizes a distributed control architecture. The **Raspberry Pi** act
 
 ---
 
-## ✨ Key Features
+## Key Features
 * **Distributed Computing**: Offloads heavy CV and Math processing to the Raspberry Pi while maintaining low-latency PWM control on the Arduino.
 * **6-DOF Precision**: Full 3D manipulation including a 3-axis spherical wrist configuration.
 * **DH-Convention Modeling**: Rigorous mathematical foundation for coordinate frame transformations.
@@ -28,7 +31,7 @@ The system utilizes a distributed control architecture. The **Raspberry Pi** act
 
 ---
 
-## 🛠 Hardware Stack
+## Hardware Stack
 * **Compute Hub**: Raspberry Pi (4B/5 recommended)
 * **Controller**: Arduino Uno or Mega
 * **Vision**: Raspberry Pi Camera Module
@@ -37,7 +40,7 @@ The system utilizes a distributed control architecture. The **Raspberry Pi** act
 
 ---
 
-## 💻 Software Setup
+## Software Setup
 
 ### 1. Raspberry Pi Environment
 Developed and tested on Raspberry Pi OS with Python 3.10+.
@@ -51,7 +54,7 @@ pip install -r requirements.txt
 
 ```
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 ROBOTIC-ARM-6DOF-ADVANCED/
